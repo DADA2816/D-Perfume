@@ -1,0 +1,33 @@
+// login start
+.login img{
+    object-fit: cover;
+    height: 730px !important;
+}
+.forgetPassword{
+    transition: all 0.3s;
+    &:hover{
+        color: $darkBrown;
+    }
+}
+.registerBtn{
+    color: $brown !important;
+    &:hover{
+        color: $white !important;
+        background-color: $brown;
+    }
+}
+.loginBtn{
+    color: $white !important;
+    &:hover{
+        background-color: $darkBrown !important;
+    }
+}
+// login end
+
+// media query start
+@include mobile{
+    .login img{
+        height: 220px !important;
+    }
+}
+// media query end

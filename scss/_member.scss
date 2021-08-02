@@ -1,0 +1,28 @@
+// member start
+.memberNav a:hover{
+    color: $Gray-848484;
+    border-bottom: 2px solid $brown;
+}   
+.dataRevise {
+    input,select{
+        color: $Gray-818A91 !important;
+    }
+    .checkbox{
+        border: 1px solid $brown !important;         //!!!!!
+        &:checked{
+            background: $brown !important;
+        }
+    }
+}
+.dataRevise,.passwordRevise{
+    .btn{
+        color: $white !important;
+        &:hover{
+            background-color: $darkBrown !important;
+        }
+    }
+}
+.tips{
+    color: #A5A5A5;
+}
+// member end

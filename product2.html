@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHANEL N°5</title>
+    <link rel="stylesheet" href="scss/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/all.js"></script>
+</head>
+<body>
+    <!-- header start -->
+    <div class="header w-100 bg-white fixed-top">
+        <div class="container d-flex justify-content-between align-items-center py-2 py-lg-0">
+            <h1 class="logo mb-0"><a href="index.html" class="d-block">D'Perfume</a></h1>
+            <ul class="pcNav d-none d-lg-flex mb-0 ps-0 fs-s">
+                <li><a href="product.html" class="d-block p-3 lightGray"><span class="material-icons fs-xs">store</span> Product</a></li>
+                <li><a href="login.html" class="d-block p-3 lightGray"><span class="material-icons fs-xs">person</span> log in</a></li>
+                <li><a href="#" class="d-block p-3 lightGray"><span class="material-icons fs-xs">favorite</span> Wishlist</a></li>
+                <li><a href="#" class="d-block p-3 pe-0 lightGray"><span class="material-icons fs-xs">shopping_cart</span> Cart (3)</a></li>
+            </ul>
+            <ul class="mobileNav mb-0 ps-0 fs-s">
+                <li><a href="product.html" class="d-block p-3 white bg-Gray border-top border-white">Product</a></li>
+                <li><a href="#" class="d-block p-3 white bg-Gray border-top border-white">Wishlist</a></li>
+                <li><a href="#" class="d-block p-3 white bg-Gray border-top border-white">Blog</a></li>
+                <li><a href="#" class="d-block p-3 white bg-Gray border-top border-white">Contact</a></li>
+                <li><a href="login.html" class="d-block p-3 white bg-Gray border-top border-white">log in</a></li>
+            </ul>
+            <div class="mobileNavIcon">
+                <button href="#" class="cart btn"><span class="material-icons fs-s">shopping_cart</span><span class="cartNum d-block white bg-brown rounded-circle">3</span></button>
+                <button href="#" class="dropDown btn"><span class="material-icons fs-l">menu</span></button>
+            </div>
+        </div>
+    </div>
+    <!-- header end -->
+
+    <!-- second nav start -->
+    <div class="secondNav d-none d-md-block mt-62 bg-brown">
+        <ul class="container d-flex mb-0 fs-s">
+            <li><a href="#" class="d-block p-14 ps-0 white">CHANEL</a></li>
+            <li><a href="#" class="d-block p-14 white">Jo Malone</a></li>
+            <li><a href="#" class="d-block p-14 white">Curology</a></li>
+            <li><a href="#" class="d-block p-14 white">Dior</a></li>
+            <li><a href="#" class="d-block p-14 white">Chloe</a></li>
+            <li><a href="#" class="d-block p-14 white">ZARA</a></li>
+        </ul>
+    </div>
+    <!-- second nav end -->
+
+    <!-- product2 start -->
+    <div class="product2 container">
+        <div class="row mt-96 mb-40 mt-md-40 mt-lg-80 mb-lg-60">
+            <div class="col-lg-8 order-2 order-lg-1">
+                <div class="row">
+                    <div class="col-lg-12 mb-30 d-none d-lg-block">
+                        <img src="https://upload.cc/i1/2021/08/01/qPnJH5.jpeg" alt="CHANEL N°5" class="pic1 w-100">
+                    </div>
+                    <div class="col-lg-6 mb-30">
+                        <img src="https://upload.cc/i1/2021/08/01/qegiGR.jpeg" alt="CHANEL N°5" class="pic2 w-100">
+                    </div>
+                    <div class="col-lg-6 mb-30">
+                        <img src="https://upload.cc/i1/2021/08/01/gU6SuI.jpeg" alt="CHANEL N°5" class="pic3 w-100">
+                    </div>
+                    <div class="col-lg-12">
+                        <img src="https://upload.cc/i1/2021/08/01/qPnJH5.jpeg" alt="CHANEL N°5" class="pic4 w-100">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 order-1 order-lg-2">
+                <img src="https://upload.cc/i1/2021/08/01/qPnJH5.jpeg" alt="CHANEL N°5" class="pic0 w-100 d-lg-none">
+                <h2 class="mt-28 mt-lg-0 mb-0 fw-bold lh-base">CHANEL N°5</h2>
+                <p class="mb-32 fs-s lh-base">N°5，女性魅力的極致精髓。散發柔美澄透的乙醛花束香氣。經典傳奇香氛，蘊藏於極簡設計的獨特瓶身。</p>
+                <p class="mb-12 fs-s lh-base">NT$4,980</p>
+                <form action="#" class="row g-0 d-flex mb-2">
+                    <div class="col-6">
+                        <input type="number" id="number" name="number" class="form-control p-3" value="1" min="1" max="100">
+                    </div>
+                    <div class="col-6">
+                        <input type="submit" value="加入購物車" class="addcart form-control p-3 bg-brown border-brown" data-bs-toggle="modal" data-bs-target="#addcart">
+                    </div>
+                </form>
+                <p class="mb-40 mb-lg-80 fs-xs lh-base"><a href="#"><span class="material-icons fs-xs brown" data-bs-toggle="modal" data-bs-target="#favorite">favorite</span></a>加入我的收藏</p>
+                <h3 class="mb-2 fs-xs fw-bold lh-base">商品購買須知</h3>
+                <p class="mb-20 fs-xs lh-base">產品因拍攝關係顏色可能略有差異，實際以廠商出貨為主。 商品情境照為示意用，僅商品主體不包含其他配件，請以規格內容物為主。 D’Perfume 盡可能確保所列商品備貨充足，但偶爾仍會有產品售罄的情況。如您所訂購的商品庫存不足，我們將盡快以電子郵件通知您。任何訂單變動均會在訂單總額與出貨訊息內更新。</p>
+                <h3 class="mb-2 fs-xs fw-bold lh-base">退換貨須知</h3>
+                <p class="mb-40 mb-lg-0 fs-xs lh-base">依《消費者保護法》的規定，於全站購物皆享有商品到貨【七日猶豫期】（含例假日）之權益。若收到的商品有任何問題，可於猶豫期內申請退貨。</p>
+            </div>
+        </div>
+    </div>
+    <!-- product2 end -->
+
+     <!-- ------------------------------------- -->
+    <!-- Modal start (favorite) -->
+    <div class="modal fade" id="favorite" tabindex="-1" aria-labelledby="favorite" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body brown text-center">已加入我的收藏</div>
+        </div>
+        </div>
+    </div>
+    <!-- Modal end (favorite)-->
+
+    <!-- Modal start (addcart) -->
+    <div class="modal fade" id="addcart" tabindex="-1" aria-labelledby="addcart" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body brown text-center">已加入購物車</div>
+        </div>
+        </div>
+    </div>
+    <!-- Modal end (addcart)-->
+    <!-- ------------------------------------- -->
+
+    <!-- footer start -->
+    <div class="footer bg-brown py-20 py-md-0">
+        <div class="container d-flex justify-content-between">
+            <div class="copyright d-flex align-items-center">
+                <h4 class="mb-0"><a href="index.html" class="d-block me-20">D'Perfume</a></h4>
+                <p class="mb-0 fs-xxs white">© 2020. All Rights Reserved.</p>
+            </div>
+            <ul class="footNav d-none d-md-flex mb-0 ps-0 fs-s">
+                <li><a href="product.html" class="d-block white p-28">Product</a></li>
+                <li><a href="#" class="d-block white p-28">Blog</a></li>
+                <li><a href="#" class="d-block white p-28 pe-0">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- footer end -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+</body>
+</html>

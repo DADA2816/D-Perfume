@@ -1,0 +1,37 @@
+// product2 start
+.product2{
+    img{
+        object-fit: cover;
+    }
+    .pic1,.pic4{
+        height: 460px !important;
+    }
+    .pic2,.pic3{
+        height: 640px !important;
+    }
+    h2{
+        font-size: 32px !important;
+        line-height: 48px !important;
+    }
+    .addcart{
+        color: $white !important;
+        &:hover{
+            background-color: $darkBrown !important;
+        }
+    }
+    span{
+        transition: all 0.3s;
+        &:hover{
+            color: $darkBrown;
+        }
+    }
+}
+// product2 end
+
+// media query start 
+@include mobile{
+    .pic0{
+        height: 220px !important;
+    }
+}   
+// media query end

@@ -1,0 +1,115 @@
+// header start
+.logo{
+    background-image: url(https://upload.cc/i1/2021/07/27/GS9JLl.png);
+    width: 128px;
+    height: 38px;
+    @include hide-text;
+}
+.pcNav a,.mobileNavIcon span{
+    transition: all 0.3s;
+    &:hover{
+        color: darken($lightGray, 20%);
+    }
+}
+.mobileNav,.mobileNavIcon{
+    display: none; 
+}
+.cart,.dropDown{
+    color: $lightGray !important;
+}
+// header end
+
+// secondNav start
+.secondNav a{
+    transition: all 0.3s;
+    &:hover{
+        color: darken($white, 20%);
+    }
+}
+// secondNav end
+
+// subscribe start
+.subscribe{
+    height: 600px;
+    background-image: url(https://upload.cc/i1/2021/07/27/OtAR0y.jpeg);
+    @include bg-img-set;
+    input{
+        height: 60px;
+        outline: 0px;
+    }
+    input[type=email]{
+        width: 220px;
+    }
+    input[type=submit]{
+        width: 130px;
+        &:hover{
+            background-color: $darkBrown !important;
+            border: 2px solid $darkBrown !important;
+        }
+    }
+}
+// subscribe end
+
+// footer start
+.footer h4 a{
+    width: 128px;
+    height: 38px;
+    background-image: url(https://upload.cc/i1/2021/07/27/4N9oQk.png);
+    @include hide-text;
+}
+.footNav a{
+    transition: all 0.3s;
+    &:hover{
+        color: darken($white, 20%);
+    }
+}
+// footer end
+
+// media query start
+@include pad{
+    .mobileNav{
+        display: block;
+        position: absolute;
+        top: 60px;
+        right: 0px;
+        left: 0px;
+        max-height: 0px;
+        overflow: hidden;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s ease-out;
+        a:hover{
+            color: $white;
+            background: $lightGray !important;
+        }
+    }
+    .mobileNavIcon{
+        display: inline-block !important;
+    }
+    .cart{
+        position: relative;
+    }
+    .cartNum{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 16px;
+        height: 13px;
+        font-size: 12px;
+        line-height: 13px;
+        text-align: center;
+    }
+}
+@include mobile{
+    .subscribe h2{
+        font-size: 32px !important;
+        line-height: 48px !important;
+    }
+}
+// media query end
+
+.active{
+    max-height: 315px;
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+}

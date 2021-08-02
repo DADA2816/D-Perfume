@@ -1,0 +1,28 @@
+// product start
+.product {
+    img{
+        object-fit: cover;
+        height: 255px !important;
+    }
+    span{
+        transition: all 0.3s;
+        &:hover{
+            color: $darkBrown;
+        }
+    }
+}
+.pageNum a{
+    transition: all 0.3s;
+    &:hover{
+        color: $darkBrown;
+    }
+}
+// product end
+
+// media query start 
+@include iphone8-plus{
+    .product img{
+        height: 165px !important;
+    }
+}
+// media query end

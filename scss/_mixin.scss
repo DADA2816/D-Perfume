@@ -1,0 +1,28 @@
+// mixin
+@mixin hide-text {
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+@mixin bg-img-set {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+// media query
+@mixin pad {
+    @media (max-width:991px) {
+        @content;
+    }
+}
+@mixin mobile {
+    @media (max-width:767px) {
+        @content;
+    }
+}
+@mixin iphone8-plus{
+    @media (max-width:414px) {
+        @content;
+    }
+}
